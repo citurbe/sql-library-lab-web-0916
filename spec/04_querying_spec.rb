@@ -11,7 +11,7 @@ describe 'querying' do
   end
 
   it 'returns the name and motto of the character with the longest motto' do
-    expect(@db.execute(select_name_and_motto_of_char_with_longest_motto)).to eq([["Tyrion Lanister", "A Lanister always pays is debts"]])
+    expect(@db.execute(select_name_and_motto_of_char_with_longest_motto)).to eq([["Tyrion Lanister", "A Lanister always pays his debts"]])
   end
 
   it 'determines the most prolific species of characters and return its value and count' do
